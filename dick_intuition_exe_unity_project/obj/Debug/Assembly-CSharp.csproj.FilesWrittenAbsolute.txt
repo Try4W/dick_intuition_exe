@@ -1,0 +1,17 @@
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEngine.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEditor.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEngine.PlaymodeTestsRunner.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Mono.Cecil.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Unity.DataContract.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/alexandrlevin/UnityProjects/dick_intuition_exe/dick_intuition_exe_unity_project/Temp/bin/Debug/Mono.Cecil.Mdb.dll
