@@ -12,12 +12,12 @@ public class GameImagesRepository : MonoBehaviour {
 	}
 
 	private void LoadImagesData() {
-		var crossdressersImagesPaths = GetFilesAtPath("data/cross");
+		var crossdressersImagesPaths = GetResourcesAtPath("textures/cross");
 		foreach (string path in crossdressersImagesPaths) {
 			Debug.Log ("LoadImagesData: " + path);
 			gameImages.Add(CreateGameImageData(path, true));
 		}
-		var normalImagesPaths = GetFilesAtPath("data/normal");
+		var normalImagesPaths = GetResourcesAtPath("textures/normal");
 		foreach (string path in normalImagesPaths) {
 			Debug.Log ("LoadImagesData: " + path);
 			gameImages.Add(CreateGameImageData(path, false));
@@ -36,14 +36,14 @@ public class GameImagesRepository : MonoBehaviour {
 		return new GameImageData (path, gender == "m", isCrossdresser, penalty, reward);
 	}
 
-	private List<string> GetFilesAtPath(string path) {
+	private List<string> GetResourcesAtPath(string path) {
 		var files = new List<string>();
-		string[] fileEntries = Directory.GetFiles(Application.dataPath + "/" + path);
+		string[] fileEntries = Directory.GetFiles(Application.dataPath + "/Resources/" + path);
 
 		foreach (string fileName in fileEntries)
 		{
-			int assetPathIndex = fileName.IndexOf("Assets");
-			string localPath = fileName.Substring(assetPathIndex);
+			int assetPathIndex = fileName.IndexOf("Resources");
+			string localPath = fileName.Substring(assetPathIndex).Replace("Resources/", "").Replace(".jpg", "");
 			if (!localPath.EndsWith (".meta")) {
 				files.Add (localPath);
 			}

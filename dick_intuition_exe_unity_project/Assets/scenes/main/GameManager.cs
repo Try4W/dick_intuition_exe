@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	public GameImagesRepository gameImagesRepository;
 	public ImageController imageController;
 	public DickController dickController;
+	public MainPanelController mainPanelController;
 
 	[SerializeField]
 	private Button sexButton;
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour {
 		sexButton.onClick.AddListener(() => PickSex());
 		denyButton.onClick.AddListener(() => PickDeny());
 		gameImagesRepository.Init ();
+		mainPanelController.ShowGamePanel();
 		NewGame ();
 	}
 
@@ -35,6 +37,9 @@ public class GameManager : MonoBehaviour {
 		usedGameImages.Clear ();
 		unusedGameImages.Clear ();
 		unusedGameImages.AddRange (gameImagesRepository.gameImages);
+		
+		sexButton.enabled = false;
+		denyButton.enabled = false;
 		ShowNextPicutre ();
 	}
 
@@ -60,24 +65,44 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void NextGameStep() {
-		if (unusedGameImages.Count == 0) {
-			FinishGame ();
-		} else {
-			ShowNextPicutre ();
-		}
+		sexButton.enabled = false;
+		denyButton.enabled = false;
+		imageController.FadeOut(() => {
+			if (unusedGameImages.Count == 0) {
+				FinishGame ();
+			} else {
+				ShowNextPicutre();
+			}
+		});
 	}
 
 	private void FinishGame() {
-		
+		if(dickController.currentSize > 10) {
+			WinGame();
+		} else {
+			OverGame();
+		}
+	}
+
+	private void WinGame() {
+		mainPanelController.ShowGameWinPanel();
+	}
+
+	private void OverGame() {
+		mainPanelController.ShowGameOverPanel();
 	}
 
 	private void ShowNextPicutre() {
-		Debug.Log ("ShowNextPicutre: " + unusedGameImages.Count);
 		var newGameImageData = unusedGameImages [Random.Range (0, unusedGameImages.Count)];
 		this.currentGameImage = newGameImageData;
 		unusedGameImages.Remove (newGameImageData);
 
 		imageController.SetImage (newGameImageData);
+		imageController.FadeIn(() => {
+			sexButton.enabled = true;
+			denyButton.enabled = true;
+		});
+		// Debug.Log ("ShowNextPicutre: " + unusedGameImages.Count);
 	}
 
 }
