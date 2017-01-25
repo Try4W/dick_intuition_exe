@@ -30,7 +30,7 @@ public class ImageController : MonoBehaviour {
 
 	public void SetImage(GameImageData imageData) {
 		Debug.Log ("SetImage: imageData: " + imageData);
-		var sprite = Resources.Load<Sprite>(imageData.assetPath);
+		var sprite = Resources.Load<Sprite>("images/" + imageData.assetName);
 		if(sprite == null) throw new NullReferenceException("sprite is null");
 		GetComponent<Image>().sprite = sprite;
 	}

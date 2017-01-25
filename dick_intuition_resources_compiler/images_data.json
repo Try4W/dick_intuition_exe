@@ -1,0 +1,107 @@
+[
+    {
+        "assetName": "10_f_n_2_1",
+        "isCrossdresser": false,
+        "isMale": false,
+        "penalty": 2,
+        "reward": 1
+    },
+    {
+        "assetName": "11_f_n_1_1",
+        "isCrossdresser": false,
+        "isMale": false,
+        "penalty": 1,
+        "reward": 1
+    },
+    {
+        "assetName": "12_f_n_1_1",
+        "isCrossdresser": false,
+        "isMale": false,
+        "penalty": 1,
+        "reward": 1
+    },
+    {
+        "assetName": "13_f_n_2_1",
+        "isCrossdresser": false,
+        "isMale": false,
+        "penalty": 2,
+        "reward": 1
+    },
+    {
+        "assetName": "14_f_n_2_1",
+        "isCrossdresser": false,
+        "isMale": false,
+        "penalty": 2,
+        "reward": 1
+    },
+    {
+        "assetName": "15_m_n_8_1",
+        "isCrossdresser": false,
+        "isMale": true,
+        "penalty": 8,
+        "reward": 1
+    },
+    {
+        "assetName": "1_m_c_2_1",
+        "isCrossdresser": true,
+        "isMale": true,
+        "penalty": 2,
+        "reward": 1
+    },
+    {
+        "assetName": "2_m_c_2_1",
+        "isCrossdresser": true,
+        "isMale": true,
+        "penalty": 2,
+        "reward": 1
+    },
+    {
+        "assetName": "3_m_c_1_1",
+        "isCrossdresser": true,
+        "isMale": true,
+        "penalty": 1,
+        "reward": 1
+    },
+    {
+        "assetName": "4_m_c_3_1",
+        "isCrossdresser": true,
+        "isMale": true,
+        "penalty": 3,
+        "reward": 1
+    },
+    {
+        "assetName": "5_m_c_1_1",
+        "isCrossdresser": true,
+        "isMale": true,
+        "penalty": 1,
+        "reward": 1
+    },
+    {
+        "assetName": "6_m_c_2_2",
+        "isCrossdresser": true,
+        "isMale": true,
+        "penalty": 2,
+        "reward": 2
+    },
+    {
+        "assetName": "7_f_c_5_1",
+        "isCrossdresser": true,
+        "isMale": false,
+        "penalty": 5,
+        "reward": 1
+    },
+    {
+        "assetName": "8_m_c_1_2",
+        "isCrossdresser": true,
+        "isMale": true,
+        "penalty": 1,
+        "reward": 2
+    },
+    {
+        "assetName": "9_f_n_3_1",
+        "isCrossdresser": false,
+        "isMale": false,
+        "penalty": 3,
+        "reward": 1
+    }
+]

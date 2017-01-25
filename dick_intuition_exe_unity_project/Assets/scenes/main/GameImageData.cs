@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class GameImageData {
 
-	public string assetPath;
+	public string assetName;
 	public bool isMale;
 	public bool isCrossdresser;
 	public int penalty;
 	public int reward;
 
-	public GameImageData(string assetPath, bool isMale, bool isCrossdresser, int penalty, int reward) {
-		this.assetPath = assetPath; 
+	public GameImageData(string assetName, bool isMale, bool isCrossdresser, int penalty, int reward) {
+		this.assetName = assetName; 
 		this.isMale = isMale;
 		this.isCrossdresser = isCrossdresser;
 		this.isCrossdresser = isCrossdresser;
@@ -20,7 +21,7 @@ public class GameImageData {
 	}
 
 	public override string ToString() {
-		return "GameImage{assetPath=" + assetPath + ", isMale=" + isMale + ", isCrossdresser=" 
+		return "GameImage{assetName=" + assetName + ", isMale=" + isMale + ", isCrossdresser=" 
 			+ isCrossdresser + ", penalty=" + penalty + ", reward=" + reward;
 	}
 
